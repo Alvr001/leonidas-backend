@@ -6,6 +6,8 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface MessageRepository extends JpaRepository<Message, Long> {
 
+   
+   
     // Todos los mensajes de un grupo ordenados por fecha
     List<Message> findByGroupIdOrderByCreatedAtAsc(Long groupId);
 
